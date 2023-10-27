@@ -6,26 +6,20 @@ function marcador_vida(vida_personagem, classe) {
 
     if (vida_personagem <= 20) {
         console.log('Você morreu!')
+
     } else if(classe === classe_2) {
         vida_atual = vida_personagem - classe_2
-        if (vida_atual <= 0){
-            console.log("Você morreu")
-        } else if (vida_atual > 0) {
-            console.log(vida_atual)
-        }
+
     } else if(classe === classe_3) {
         vida_atual = vida_personagem - classe_3
-        if (vida_atual <= 0){
-            console.log("Você morreu")
-        } else if (vida_atual > 0) {
-            console.log(vida_atual)
-        }
+
     } else if(classe === classe_4) {
         vida_atual = vida_personagem - classe_4
-        if (vida_atual <= 0){
-            console.log("Você morreu")
-        } else if (vida_atual > 0) {
-            console.log(vida_atual)
-        }
+    }
+
+    if (vida_atual <= 0){
+        console.log("Você morreu")
+    } else if (vida_atual > 0) {
+        console.log(vida_atual)
     }   
 }
